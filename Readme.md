@@ -1,29 +1,27 @@
 # :soccer::fr: Database for Ligue 1 :fr::soccer:
 *My small contribution to have all the statistics in a handy way*
 
-[Why](#why)<\br>
-[How the files works](#how-the-files-works)<\br>
+[Why](#why)<br/>
+[How the files works](#how-the-files-works)
 
 ## Why
-For my personal work, I needed all the statistics of the french first division of football. But there was no database listing every  statistics of that league. Surely there was some but no one were free or easy to use. (Maybe I didn't search well too)
-So I tried to do it myself.
-Then I made some scripts to scrapes the official website of the Ligue 1 (https://www.ligue1.fr).
-And here are all the statistics given by the website. We have the standings bit and the individual match statistics as well.
-*Nb: We have the statistics of the individual match only since the season 2020-2021!*<\br>
-***If there is any errors, please tell me.***
+For my personal work, I needed all the statistics of the french first division of football. But there was no database listing every  statistics of that league. Surely there was some but no one were free or easy to use. (Maybe I didn't search well too)<br/>
+So I tried to do it myself.<br/>
+Then I made some scripts to scrapes the official website of the Ligue 1 (https://www.ligue1.fr).<br/>
+And here are all the statistics given by the website. We have the standings bit and the individual match statistics as well.<br/>
+*Nb: We have the statistics of the individual match only since the season 2020-2021!*<br/>
+<br/>
+***If there is any errors, please tell me.***<br/>
 ***I try my best to keep the database up to date.***
 
 ## How the files works
 - **Teams.csv**: The id to name file
-
 	- *id*: The id of the team for this database
 	- *abbr*: The abbreviation of the team name
 	- *fullName*: The full name of the club
-<\br>
 
 *Every season is on there folder*
 - **matchs.csv**: Has the statistics for every match of the season
-
 	- *id*: The id of the match according to the Ligue 1 website
 	- *date*: An int with the format `YYYYMMDD`
 	- *hour*: An int with the format `hhmm`
@@ -55,14 +53,14 @@ And here are all the statistics given by the website. We have the standings bit 
 	- *\[h/a]_concededFaults*: The number of foul conceded
 	- *\[h/a]_yellowCards*: The number of yellow card obtained
 	- *\[h/a]_redCards*: The number of red card obtained
-<\br>
-- **standing.csv**: The standing of the league for every match week
+<br/>
 
+- **standing.csv**: The standing of the league for every match week
 	- *leagueMatchNb*: The match week number
 	- *1st[..]20th*: The abbreviation of the team name at the specific place
-<\br>
-- **[1st..20th]PlaceOverTime.csv**: The evolution of a specific place in the league for every match week
+<br/>
 
+- **[1st..20th]PlaceOverTime.csv**: The evolution of a specific place in the league for every match week
 	- *leagueMatchNb*: The match week number
 	- *teamName*: The abbreviation of the team name
 	- *points*: The number of points after `leagueMatchNb` match
